@@ -1,0 +1,28 @@
+/* TODO: Fix this */;
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.project-image {
+    cursor: pointer;
+}
+
+.project-header {
+    color: #F8981C;
+    text-transform: uppercase;
+}
+
+.blue-text {
+    color: rgb(2, 179, 228);
+}
+
+/* Prevent overflow */
+img, embed, object, video {
+    max-width: 100%;
+}
+
+/* Make sure buttons are big enough to be tapped on mobile devices */
+nav a, button {
+    min-width: 48px;
+    min-height: 48px;
+}
