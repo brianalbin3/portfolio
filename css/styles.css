@@ -1,6 +1,10 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif; /* TODO: IS THIS WORKING? */;
     font-size: 14px;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
 }
 
 .headerDiv {
@@ -30,7 +34,7 @@ body {
 
 
 /* Prevent overflow */
-img, embed, object, video {
+img {
     max-width: 100%;
 }
 
@@ -84,11 +88,13 @@ ul.social-media-list li:last-of-type {
         margin-left: 10px;
     }
 
+    .project-image {
+        border: 2px solid black;
+    }
 
     .project-intro-header {
         text-align: center;
     }
-
 
     .project-header {
         color: white;
