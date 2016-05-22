@@ -1,5 +1,10 @@
 <!-- TODO: alts for all images -->
 <!-- TODO: Consider break points using media specific style sheets? <link rel="stylesheet" media="screen and (condition: px) and (condition: px)" href=""> ?? -->
+<!-- TODO: Create SVG logo -->
+<!-- TODO: https://validator.w3.org/#validate_by_input -->
+<!-- TODO: https://jigsaw.w3.org/css-validator/#validate_by_input -->
+<!-- TODO: Font icon for email / linkedin / phone (it says I can add my own content), use footer tag -->
+<!-- TODO: seperate projects when screen is small -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,87 +15,104 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!-- TODO: IS THIS WORKING????? -->
     <script src="js/jquery-2.2.3.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
+
     <div class="container">
+
       <div class="row">
         <div class="col-md-6"><img class="img-responsive" alt="" src="http://placehold.it/100x100"></div>
-        <div class="text-right text-uppercase col-md-6">
+        <div class="headerDiv text-uppercase col-md-6">
           <!-- TODO: Orange box around information -->
           <h1 class="blue-text">Brian Albin</h1>
-          <h3 class="blue-text" style="font-size: 16px;">Software Engineer</h3>
+          <h3 class="blue-text job-title-header">Software Engineer</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <img class="img-responsive" alt="" src="http://placehold.it/1140x350">
-        </div>
-      </div>
+
       <div class="row">
         <div class="col-md-12">
           <hr>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12">
-          <h2 class="blue-text">Featured Work</h2>
+          <img class="img-responsive" alt="" src="http://placehold.it/1140x350">
         </div>
       </div>
-      <div class="text-center row">
-        <div class="col-md-6">
-          <img class="project-image img-responsive" alt="" src="http://placehold.it/555x300" data-toggle="modal" data-target="#myModal">
-          <h3 class="project-header">Project 1</h3>
-          <p><a href="http://github.com">Link to project</a></p>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="project-intro-header blue-text">Featured Work</h2>
         </div>
-        <div class="col-md-6">
-          <img class="project-image img-responsive" alt="" src="http://placehold.it/555x300" data-toggle="modal" data-target="#myModal">
+      </div>
+
+      <!-- TODO: FIX PROJECT IMAGE SIZE ISSUE -->
+
+      <div class="text-center row">
+        <div class="project col-md-4">
+          <img class="project-image img-responsive" alt="Gameplay Screenshot" src="img/mssprojectimage.jpg" data-toggle="modal" data-target="#modDetailsModal" data-project-name="Master-Sword: Source"  data-description="Master-Sword: Source is a mod created using the Source Engine by a small team including myself. Although the mod was never finished, a number of features were implemented including multiple enemies, a GUI based heads up display, melee weapons with advanced collision detection, and a character selection menu. The project was written entirely in C++. I was the team leader as well as a programmer. The project team consisted of programmers, level artists, musicians, character modeler designers, and an animate. The mod can be seen at http://www.moddb.com/mods/master-sword-source. Unfortunately, all of the code was lost except for one image button class I posted on a developer wiki.">
+          <h3 class="project-header">Master Sword: Source</h3>
+          <p><a href="http://moddb.com/mods/master-sword-source">Moddb Profile</a></p>
+        </div>
+        <div class="project col-md-4">
+          <img class="project-image img-responsive" alt="" src="http://placehold.it/300x200" data-toggle="modal" data-target="#modDetailsModal"  data-project-name="" data-description="">
           <h3 class="project-header">Project 2</h3>
           <p><a href="http://github.com">Link to project</a></p>
         </div>
-      </div>
-      <div class="text-center row">
-        <div class="col-md-6">
-          <img class="project-image img-responsive" alt="" src="http://placehold.it/555x300" data-toggle="modal" data-target="#myModal">
+        <div class="project col-md-4">
+          <img class="project-image img-responsive" alt="" src="http://placehold.it/300x200" data-toggle="modal" data-target="#modDetailsModal"  data-project-name=""  data-description="">
           <h3 class="project-header">Project 3</h3>
           <p><a href="http://github.com">Link to project</a></p>
         </div>
-        <div class="col-md-6">
-          <img class="project-image img-responsive" alt="" src="http://placehold.it/555x300" data-toggle="modal" data-target="#myModal">
-          <h3 class="project-header">Project 4  </h3>
-          <p><a href="http://github.com">Link to project</a></p>
-        </div>
       </div>
+
+      <footer class="row">
+        <div class="col-md-12">
+          <ul class="social-media-list">
+            <li class="social-media-list-item zocial-github"><a href="https://github.com/brianalbin3">Github</a></li>
+            <li class="social-media-list-item zocial-linkedin"><a href="https://www.linkedin.com/in/brian-albin-15666273">LinkedIn Profile</a></li>
+            <li class="social-media-list-item zocial-email"><a href="mailto:brianalbin3@gmail.com?Subject=Nice%20Profile">E-Mail</a></li>
+            <li class="social-media-list-item zocial-call">410-917-6440</li>
+          </ul>
+        </div>
+      </footer>
     </div>
 
-    <!-- TODO: Finish with http://getbootstrap.com/javascript/#modals-related-target-->
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modDetailsModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
           </div>
           <div class="modal-body">
-          <img class="img-responsive" src="TODO" alt="">
+            <img class="img-responsive" src="" alt="">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+        </div>
+      </div>
+    </div>
 
+
+    <script>
+      $("#modDetailsModal").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+
+        var projectName = button.data("project-name")
+        var projectDescription = button.data("description")
+        var projectImage = button.data("image")
+
+        var modal = $(this)
+        modal.find(".modal-title").text( projectName )
+        modal.find(".modal-body").text( projectDescription )
+    })
+    </script>
 
   </body>
 </html>
-
-
-
-
-
-
-
-
