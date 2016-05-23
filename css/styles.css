@@ -1,8 +1,3 @@
-body {
-    font-family: 'Lato', sans-serif; /* TODO: IS THIS WORKING? */;
-    font-size: 14px;
-}
-
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
@@ -32,17 +27,8 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-
-/* Prevent overflow */
 img {
     max-width: 100%;
-}
-
-/* Make sure buttons are big enough to be tapped on mobile devices */
-/* TODO: DO I HAVE ANY OF THESE? */;
-nav a, button {
-    min-width: 48px;
-    min-height: 48px;
 }
 
 [class*="zocial-"]:before {
@@ -78,14 +64,15 @@ ul.social-media-list li:last-of-type {
         text-align: center;
     }
 
+    .logo-container {
+        display: none;
+    }
+
     .project {
         background-color: #F8981C;
-        padding-top: 25px;
-        padding-bottom: 15px;
         border-radius: 15px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-        margin-left: 10px;
+        padding: 25px 0 15px 0;
+        margin: 0 10px 20px 10px;
     }
 
     .project-image {
@@ -110,8 +97,7 @@ ul.social-media-list li:last-of-type {
 
     .social-media-list-item {
         display: list-item;
-        margin-right: 0px;
-        margin-bottom: 5px;
+        margin: 0 0 5px 0;
     }
 
     ul.social-media-list li:last-of-type {

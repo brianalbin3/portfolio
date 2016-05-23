@@ -1,10 +1,3 @@
-<!-- TODO: alts for all images -->
-<!-- TODO: Consider break points using media specific style sheets? <link rel="stylesheet" media="screen and (condition: px) and (condition: px)" href=""> ?? -->
-<!-- TODO: Create SVG logo -->
-<!-- TODO: https://validator.w3.org/#validate_by_input -->
-<!-- TODO: https://jigsaw.w3.org/css-validator/#validate_by_input -->
-<!-- TODO: Font icon for email / linkedin / phone (it says I can add my own content), use footer tag -->
-<!-- TODO: seperate projects when screen is small -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,8 +8,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> <!-- TODO: IS THIS WORKING????? -->
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="js/jquery-2.2.3.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
@@ -25,9 +18,11 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-6"><img class="img-responsive" alt="" src="http://placehold.it/100x100"></div>
+        <div class="logo-container col-md-6">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="" pageAlignment="none" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><defs/><g type="LAYER" name="workspace" id="workspace" locked="true"/><g id="Layer 01" type="LAYER" name="Layer 01"><path transform="matrix(1 0 0 1 99.80468750000051 96.87500000000006)" width="99.30468750000006" height="96.37500000000009" stroke-width="1.9076414183511288" stroke-miterlimit="3" stroke="none" fill="#02B3E4" d="M-2.842170943040401e-14,-48.18750000000004 C-2.842170943040401e-14,-21.574276200000014 -22.230109012500037,0 -49.65234375000003,0 C-77.07457848750003,0 -99.30468750000009,-21.57427619999997 -99.30468750000009,-48.18750000000005 C-99.30468750000009,-74.8007238 -77.07457848750003,-96.37500000000009 -49.65234375000003,-96.37500000000009 C-22.230109012500037,-96.37500000000009 -2.842170943040401e-14,-74.80072380000006 -2.842170943040401e-14,-48.18750000000004 Z "/><text type="textBox" transform="matrix(0.9999999999999986 0 0 1 50.00000000000001 40.00000000000002)" width="30.820312500000036" height="58" stroke-miterlimit="3" stroke="none" fill="#F8981C" font-family="Cursive" font-weight="bold" font-size="42" text-align="left" text-anchor="start"><tspan x="0" y="42"><![CDATA[A]]></tspan></text><text type="textBox" transform="matrix(0.9999999999999996 0 0 0.9999999999999999 22.93696120689146 2.353247440967924)" width="28.56043462644209" height="58" stroke-miterlimit="3" stroke="none" fill="#F8981C" font-family="Cursive" font-weight="bold" font-size="42" text-align="left" text-anchor="start"><tspan x="0" y="42"><![CDATA[B]]></tspan></text><path transform="matrix(1 0 0 1 24.153645833333663 57.03125000000097)" width="19.661458333339326" height="21.354166666665733" stroke-width="5.410941431376702" stroke-miterlimit="3" stroke="none" fill="#F8981C" d="M-1.7053025658242404e-13,10.677083333332888 C-1.7053025658242404e-13,4.780292499999831 4.401366875001202,1.4210854715202004e-14 9.830729166669556,1.4210854715202004e-14 C15.260091458337783,1.4210854715202004e-14 19.661458333339155,4.780292499999831 19.661458333339155,10.677083333332888 C19.661458333339155,16.57387416666596 15.260091458337783,21.354166666665748 9.830729166669556,21.354166666665748 C4.401366875001202,21.354166666665748 -1.7053025658242404e-13,16.57387416666596 -1.7053025658242404e-13,10.677083333332888 Z "/><path transform="matrix(1 0 0 1 60.611979166667744 18.619791666667787)" width="19.661458333339326" height="21.354166666665733" stroke-width="5.410941431376702" stroke-miterlimit="3" stroke="none" fill="#F8981C" d="M-1.7053025658242404e-13,10.677083333332888 C-1.7053025658242404e-13,4.780292499999831 4.401366875001202,1.4210854715202004e-14 9.830729166669556,1.4210854715202004e-14 C15.260091458337783,1.4210854715202004e-14 19.661458333339155,4.780292499999831 19.661458333339155,10.677083333332888 C19.661458333339155,16.57387416666596 15.260091458337783,21.354166666665748 9.830729166669556,21.354166666665748 C4.401366875001202,21.354166666665748 -1.7053025658242404e-13,16.57387416666596 -1.7053025658242404e-13,10.677083333332888 Z "/></g>
+          </svg>
+        </div>
         <div class="headerDiv text-uppercase col-md-6">
-          <!-- TODO: Orange box around information -->
           <h1 class="blue-text">Brian Albin</h1>
           <h3 class="blue-text job-title-header">Software Engineer</h3>
         </div>
@@ -41,7 +36,10 @@
 
       <div class="row">
         <div class="col-md-12">
-          <img class="img-responsive" alt="Code" src="img/code_1140w.png">
+          <!-- TODO: Is it producing the smaller image for phones? -->
+          <img class="img-responsive" alt="Code" src="img/code_1140w.png"
+          srcset="img/code_1140w.png 1140w, img/code_400w.png 400w"
+          >
         </div>
       </div>
 
@@ -51,23 +49,23 @@
         </div>
       </div>
 
-      <!-- TODO: FIX PROJECT IMAGE SIZE ISSUE -->
-
       <div class="text-center row">
         <div class="project col-md-4">
           <img class="project-image img-responsive" alt="Gameplay Screenshot" src="img/mssprojectimage.jpg" data-toggle="modal" data-target="#modDetailsModal" data-project-name="Master-Sword: Source"  data-description="Master-Sword: Source is a mod created using the Source Engine by a small team including myself. Although the mod was never finished, a number of features were implemented including multiple enemies, a GUI based heads up display, melee weapons with advanced collision detection, and a character selection menu. The project was written entirely in C++. I was the team leader as well as a programmer. The project team consisted of programmers, level artists, musicians, character modeler designers, and an animate. The mod can be seen at http://www.moddb.com/mods/master-sword-source. Unfortunately, all of the code was lost except for one image button class I posted on a developer wiki.">
           <h3 class="project-header">Master Sword: Source</h3>
           <p><a href="http://moddb.com/mods/master-sword-source">Moddb Profile</a></p>
         </div>
+        <!-- TODO: Replace with a real project when time permits -->
         <div class="project col-md-4">
-          <img class="project-image img-responsive" alt="Master Sword Source Screenshot" src="http://placehold.it/300x200" data-toggle="modal" data-target="#modDetailsModal"  data-project-name="" data-description="">
-          <h3 class="project-header">Project 2</h3>
-          <p><a href="http://github.com">Link to project</a></p>
+          <img class="project-image img-responsive" alt="Site Picture" src="img/animaltradingcardprojectimage.jpg" data-toggle="modal" data-target="#modDetailsModal"  data-project-name="Animal Trading Cards Web Page" data-description="A web page of an animal trading card was created from a mockup.">
+          <h3 class="project-header">Animal Trading Cards Page</h3>
+          <p><a href="https://github.com/brianalbin3/animal-trading-cards">Github Code</a></p>
         </div>
+        <!-- TODO: Replace with a real project when time permits -->
         <div class="project col-md-4">
-          <img class="project-image img-responsive" alt="" src="http://placehold.it/300x200" data-toggle="modal" data-target="#modDetailsModal"  data-project-name=""  data-description="">
-          <h3 class="project-header">Project 3</h3>
-          <p><a href="http://github.com">Link to project</a></p>
+          <img class="project-image img-responsive" alt="Site Picture" src="img/articleprojectimage.png" data-toggle="modal" data-target="#modDetailsModal"  data-project-name="Article Web Page" data-description="A web page I add css styles to look better.">
+          <h3 class="project-header">Article Web Page</h3>
+          <p><a href="https://github.com/brianalbin3/article">Github Code</a></p>
         </div>
       </div>
 
@@ -90,7 +88,6 @@
             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="" alt="">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
