@@ -1,8 +1,10 @@
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
+h1,
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
 }
 
-.headerDiv {
+.header-div {
     text-align: right;
 }
 
@@ -54,13 +56,13 @@ img {
     margin-right: 1em;
 }
 
-ul.social-media-list li:last-of-type {
+.social-media-list li:last-of-type {
     margin: 0;
 }
 
 @media screen and (max-width: 995px ) {
 
-    .headerDiv {
+    .header-div {
         text-align: center;
     }
 
@@ -100,7 +102,7 @@ ul.social-media-list li:last-of-type {
         margin: 0 0 5px 0;
     }
 
-    ul.social-media-list li:last-of-type {
+    .social-media-list li:last-of-type {
         margin: 0;
     }
 
